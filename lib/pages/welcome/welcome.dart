@@ -2,7 +2,9 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ulearning/common/values/constant.dart';
 import 'package:flutter_ulearning/entities/values/colors.dart';
+import 'package:flutter_ulearning/global.dart';
 import 'package:flutter_ulearning/main.dart';
 import 'package:flutter_ulearning/pages/sign_in/sign_in.dart';
 import 'package:flutter_ulearning/pages/welcome/bloc/welcome_blocs.dart';
@@ -120,11 +122,14 @@ class _WelcomeState extends State<Welcome> {
                 duration: const Duration(milliseconds: 1000),
                 curve: Curves.easeIn);
           } else {
+            Global.storageService
+                .setBool(AppConstants.STORAGE_DEVICE_OPEN_FIRST_TIME, true);
+            print("the value is ${Global.storageService.getDeviceFirstOpen()}");
             //jumpt to a new page
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => SignIn()));
             // Navigator.of(context)
-            //     .pushNamedAndRemoveUntil("signIn", (route) => false);
+            //     .push(MaterialPageRoute(builder: (context) => SignIn()));
+            Navigator.of(context)
+                .pushNamedAndRemoveUntil("/sign_in", (route) => false);
           }
         },
         child: Container(

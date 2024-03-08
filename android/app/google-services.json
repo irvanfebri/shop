@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "62301347761",
+    "project_id": "ulearning-app-9fecf",
+    "storage_bucket": "ulearning-app-9fecf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62301347761:android:301cd9bff94bc7a4102790",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ulearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARN154Dwbr0NfImvklAz8IaQkLG0ihuCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62301347761:android:cc16946b8b7b8b85102790",
+        "android_client_info": {
+          "package_name": "com.example.shop_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARN154Dwbr0NfImvklAz8IaQkLG0ihuCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
